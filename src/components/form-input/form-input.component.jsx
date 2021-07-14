@@ -5,6 +5,8 @@ import './form-input.styles.scss';
 const FormInput = ({ handleChange, label, ...otherProps}) => (
     <div className='group'>
         <input className='form-input'
+        hidden
+        autoComplete={otherProps.value}
          onChange={handleChange}
          {...otherProps} />
          {
@@ -13,7 +15,7 @@ const FormInput = ({ handleChange, label, ...otherProps}) => (
                 { label }
              </label>)
              : null
-         }
+         }   
     </div>
 );
 

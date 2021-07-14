@@ -47,6 +47,7 @@ const SignIn = () => {
                     value={defaultEmailPassword.password}
                     handleChange={handleChange}
                     label="Password"
+                    autoComplete='new-password'
                     required
                 />
                 <div className='buttons'>
